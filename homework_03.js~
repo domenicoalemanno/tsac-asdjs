@@ -19,12 +19,12 @@ Stack.prototype.isEmpty = function() {
     return this.myarray.length == 0;
 }
 
-function dec2bin(a) {
+function dec2Bin(a) {
         var s1 = new Stack();
         var stringa = "";
-        while (a > 0) {
-        s1.push(a % 2);
-        a=Math.floor(a / 2);    
+        while (a>0) {
+        s1.push(a%2);
+        a=Math.floor(a/2);    
         }
         while (!s1.isEmpty()){
         stringa += s1.pop().toString();                      
